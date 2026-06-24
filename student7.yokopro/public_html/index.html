@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language School - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <span class="logo__text">Language School</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link nav__link--active">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="courses.html" class="nav__link">Курсы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Добро пожаловать в Language School</h1>
+                <p class="hero__subtitle">Ваш путь к новым знаниям и навыкам начинается здесь</p>
+                <a href="courses.html" class="btn btn--primary">Выбрать курс</a>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section class="advantages">
+            <div class="container">
+                <h2 class="section__title">Наши преимущества</h2>
+                <div class="advantages__grid">
+                    <div class="advantage-card">
+                        <div class="advantage-card__icon">👨‍🏫</div>
+                        <h3 class="advantage-card__title">Квалифицированные педагоги</h3>
+                        <p class="advantage-card__text">
+                            Курсы ведут квалифицированные педагоги, многие из которых имеют опыт работы за рубежом или являются носителями языка.
+                        </p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-card__icon">📅</div>
+                        <h3 class="advantage-card__title">Удобный график</h3>
+                        <p class="advantage-card__text">
+                            Возможность выбора удобного графика занятий в группах с комфортной наполняемостью или заниматься индивидуально.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Slider -->
+        <section class="reviews">
+            <div class="container">
+                <h2 class="section__title">Отзывы наших студентов</h2>
+                <div class="slider">
+                    <div class="slider__container">
+                        <div class="slider__track">
+                            <div class="slider__slide slider__slide--active">
+                                <div class="review-card">
+                                    <div class="review-card__avatar">АМ</div>
+                                    <h3 class="review-card__name">Анна Михайлова</h3>
+                                    <div class="review-card__rating">★★★★★</div>
+                                    <p class="review-card__text">
+                                        Прошла курс "Excel для чайников" и теперь уверенно работаю с таблицами. Преподаватели объясняют очень доступно!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slider__slide">
+                                <div class="review-card">
+                                    <div class="review-card__avatar">ДК</div>
+                                    <h3 class="review-card__name">Дмитрий Козлов</h3>
+                                    <div class="review-card__rating">★★★★★</div>
+                                    <p class="review-card__text">
+                                        Курс Python-разработчик превзошел ожидания. За 6 месяцев освоил веб-разработку и нашел работу.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slider__slide">
+                                <div class="review-card">
+                                    <div class="review-card__avatar">ОС</div>
+                                    <h3 class="review-card__name">Ольга Смирнова</h3>
+                                    <div class="review-card__rating">★★★★☆</div>
+                                    <p class="review-card__text">
+                                        Очень понравился курс по веб-дизайну в Figma. Много практики и полезных материалов.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__controls">
+                        <button class="slider__btn slider__btn--prev" aria-label="Предыдущий отзыв">←</button>
+                        <div class="slider__dots">
+                            <span class="slider__dot slider__dot--active" data-slide="0"></span>
+                            <span class="slider__dot" data-slide="1"></span>
+                            <span class="slider__dot" data-slide="2"></span>
+                        </div>
+                        <button class="slider__btn slider__btn--next" aria-label="Следующий отзыв">→</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <h3 class="footer__title">Контактная информация</h3>
+                    <!-- Использую данные из таблицы 1, вариант 7 -->
+                    <address class="footer__contacts">
+                        <p class="footer__contact-item">
+                            <span class="footer__contact-icon">📍</span>
+                            ул. Тверская, 25
+                        </p>
+                        <p class="footer__contact-item">
+                            <span class="footer__contact-icon">📞</span>
+                            <a href="tel:+79165554433" class="footer__contact-link">+7 (916) 555-44-33</a>
+                        </p>
+                        <p class="footer__contact-item">
+                            <span class="footer__contact-icon">✉️</span>
+                            <a href="mailto:tverskaya25@gmail.com" class="footer__contact-link">tverskaya25@gmail.com</a>
+                        </p>
+                    </address>
+                </div>
+                <div class="footer__copyright">
+                    <p>&copy; 2024 Language School. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

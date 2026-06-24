@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language School - Курсы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <span class="logo__text">Language School</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="courses.html" class="nav__link nav__link--active">Курсы</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="courses">
+            <div class="container">
+                <h1 class="section__title">Актуальные курсы</h1>
+                <div class="courses__grid" id="coursesGrid">
+                    <!-- Курсы будут загружены через JavaScript -->
+                    <div class="loading">Загрузка курсов...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма записи на курс -->
+        <section class="enrollment" id="enrollmentForm">
+            <div class="container">
+                <h2 class="section__title">Записаться на курс</h2>
+                <form class="enrollment__form" id="courseForm">
+                    <div class="form__group">
+                        <label for="fullName" class="form__label">ФИО *</label>
+                        <input 
+                            type="text" 
+                            id="fullName" 
+                            name="full_name" 
+                            class="form__input" 
+                            placeholder="Иванов Иван Иванович"
+                            required
+                        >
+                        <span class="form__error" id="fullNameError"></span>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="phone" class="form__label">Телефон *</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            class="form__input" 
+                            placeholder="+7(XXX)-XXX-XX-XX"
+                            required
+                        >
+                        <span class="form__error" id="phoneError"></span>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="form__input" 
+                            placeholder="example@mail.ru"
+                            required
+                        >
+                        <span class="form__error" id="emailError"></span>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="course" class="form__label">Выберите курс *</label>
+                        <select id="course" name="course_id" class="form__select" required>
+                            <option value="">-- Выберите курс --</option>
+                        </select>
+                        <span class="form__error" id="courseError"></span>
+                    </div>
+
+                    <div class="form__group form__group--checkbox">
+                        <label class="form__checkbox-label">
+                            <input 
+                                type="checkbox" 
+                                id="consent" 
+                                name="consent" 
+                                class="form__checkbox"
+                                required
+                            >
+                            <span class="form__checkbox-text">
+                                Я даю согласие на обработку персональных данных *
+                            </span>
+                        </label>
+                        <span class="form__error" id="consentError"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary form__submit">
+                        Записаться
+                    </button>
+                </form>
+
+                <div class="form__success" id="successMessage" style="display: none;">
+                    <h3 class="form__success-title">Спасибо за заявку!</h3>
+                    <p class="form__success-text">Мы свяжемся с вами в ближайшее время.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <h3 class="footer__title">Контактная информация</h3>
+                    <address class="footer__contacts">
+                        <p class="footer__contact-item">
+                            <span class="footer__contact-icon">📍</span>
+                            ул. Тверская, 25
+                        </p>
+                        <p class="footer__contact-item">
+                            <span class="footer__contact-icon">📞</span>
+                            <a href="tel:+79165554433" class="footer__contact-link">+7 (916) 555-44-33</a>
+                        </p>
+                        <p class="footer__contact-item">
+                            <span class="footer__contact-icon">✉️</span>
+                            <a href="mailto:tverskaya25@gmail.com" class="footer__contact-link">tverskaya25@gmail.com</a>
+                        </p>
+                    </address>
+                </div>
+                <div class="footer__copyright">
+                    <p>&copy; 2024 Language School. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
